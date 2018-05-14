@@ -16,7 +16,6 @@ PHP Curl Class makes it easy to send HTTP requests and integrate with web APIs.
 - [Quick Start and Examples](#quick-start-and-examples)
 - [Available Methods](#available-methods)
 - [Security](#security)
-- [Troubleshooting](#troubleshooting)
 - [Run Tests](#run-tests)
 - [Contribute](#contribute)
 
@@ -128,10 +127,10 @@ $curl->delete('https://api.example.com/user/', array(
 ```
 
 ```php
-// Enable all supported encoding types and download a file.
+// Enable gzip compression and download a file.
 $curl = new Curl();
-$curl->setOpt(CURLOPT_ENCODING , '');
-$curl->download('https://www.example.com/file.bin', '/tmp/myfile.bin');
+$curl->setOpt(CURLOPT_ENCODING , 'gzip');
+$curl->download('https://www.example.com/image.png', '/tmp/myimage.png');
 ```
 
 ```php
@@ -211,7 +210,6 @@ Curl::getCookie($key)
 Curl::getInfo($opt = null)
 Curl::getOpt($option)
 Curl::getResponseCookie($key)
-Curl::getResponseCookies()
 Curl::head($url, $data = array())
 Curl::options($url, $data = array())
 Curl::patch($url, $data = array())
@@ -299,10 +297,6 @@ MultiCurl::verbose($on = true, $output = STDERR)
 ### Security
 
 See [SECURITY](https://github.com/php-curl-class/php-curl-class/blob/master/SECURITY.md) for security considerations.
-
-### Troubleshooting
-
-See [TROUBLESHOOTING](https://github.com/php-curl-class/php-curl-class/blob/master/TROUBLESHOOTING.md) for troubleshooting.
 
 ### Run Tests
 
