@@ -1,8 +1,6 @@
 <?php
 namespace SuperLogica;
 
-require_once(ROOT_GENESIS . 'inc/curl.class.php');
-
 use \Curl\Curl;
 
 class SuperLogicaApi
