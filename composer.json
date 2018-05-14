@@ -1,6 +1,6 @@
 {
     "name": "simplesvet/superlogica",
-    "version": "1.1",
+    "version": "1.2",
     "minimum-stability": "RC",
     "description": "Superlógica API",
     "type": "package",
