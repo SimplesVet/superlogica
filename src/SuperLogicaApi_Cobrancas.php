@@ -59,6 +59,7 @@ class SuperLogicaApi_Cobrancas extends SuperLogicaApi
 
         return json_decode(json_encode($this->curl->response), true);
     }
+    
     public function getcobrancamescliente($id, $inicio, $fim)
     {
         $this->curl->get($this->url . '/cobranca?CLIENTES[0]=' . $id .'&dtInicio=' . $inicio . '&dtFim=' . $fim);
